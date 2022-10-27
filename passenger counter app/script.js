@@ -7,6 +7,7 @@ function increment() {
 }
 
 function refresh()  {
+    counter = 0
     document.getElementById("count-el").innerText = 0
 
 }
