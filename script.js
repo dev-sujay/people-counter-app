@@ -16,8 +16,8 @@ function refresh()  {
 
 
 function save() {
-    let entryMessage = counter + "-"
-    saveEl.innerText += " " + entryMessage
+    let entryHistory = counter + "-"
+    saveEl.innerText += entryHistory
 
     
 }
