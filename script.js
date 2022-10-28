@@ -8,16 +8,19 @@ function increment() {
     document.getElementById("count-el").innerText = counter
 }
 
-function refresh()  {
-    counter = 0
-    document.getElementById("count-el").innerText = 0
+// function refresh()  {
+//     counter = 0
+//     document.getElementById("count-el").innerText = 0
 
-}
+// }
 
 
 function save() {
-    let entryHistory = counter + "-"
-    saveEl.innerText += entryHistory
+    
+    let entryHistory = counter + " - "
+    saveEl.textContent += entryHistory
+    counter = 0
+    document.getElementById("count-el").innerText = 0
 
     
 }
