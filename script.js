@@ -1,10 +1,10 @@
 
 let counter = 0
 
-
+let saveEl = document.getElementById("save-el")
 
 function increment() {
-    counter = counter + 1
+    counter += 1
     document.getElementById("count-el").innerText = counter
 }
 
@@ -14,8 +14,11 @@ function refresh()  {
 
 }
 
-function save() {   
-    console.log(counter)
-}
 
+function save() {
+    let entryMessage = counter + "-"
+    saveEl.innerText += " " + entryMessage
+
+    
+}
 
